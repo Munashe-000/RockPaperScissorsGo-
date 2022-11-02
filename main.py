@@ -10,6 +10,8 @@ scoreMe = 0
 
 scoreComp = 0
 
+gameRound = 0
+
 while (1 < 2):
 
   print("\n")
@@ -40,26 +42,30 @@ while (1 < 2):
 
   elif opponenetChoice == 'R' and userChoice.upper() == 'S':
 
+    gameRound += 1
     scoreComp += 1
-    print("Scissors beats rock, I win! ")
+    print("Scissors beats rock, I win round " + str(gameRound) + ".")
 
     continue
 
   elif opponenetChoice == 'S' and userChoice.upper() == 'P':
 
+    gameRound += 1
     scoreComp += 1
-    print("Scissors beats paper! I win! ")
+    print("Scissors beats paper! I win round " + str(gameRound) + ".")
 
     continue
 
   elif opponenetChoice == 'P' and userChoice.upper() == 'R':
 
+    gameRound += 1
     scoreComp += 1
-    print("Paper beat rock, I win!")
+    print("Paper beat rock, I win round " + str(gameRound) + ".")
 
     continue
 
   else:
 
+    gameRound += 1
     scoreMe += 1
-    print("You win!")
+    print("You win round " + str(gameRound) + ".")
