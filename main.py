@@ -28,13 +28,11 @@ while (1 < 2):
 
     continue
 
-  print("You chose: " + userChoice)
-
   choices = ['R', 'P', 'S']
 
   opponenetChoice = random.choice(choices)
 
-  print("I chose: " + opponenetChoice)
+  print("You: " + userChoice + " vs " + "CPU: " + opponenetChoice)
 
   if opponenetChoice == str.upper(userChoice):
 
@@ -45,6 +43,9 @@ while (1 < 2):
     gameRound += 1
     scoreComp += 1
     print("Scissors beats rock, I win round " + str(gameRound) + ".")
+    print("")
+    print("The current score is: You: " + str(scoreMe) + " vs CPU: " +
+          str(scoreComp))
 
     continue
 
@@ -53,6 +54,9 @@ while (1 < 2):
     gameRound += 1
     scoreComp += 1
     print("Scissors beats paper! I win round " + str(gameRound) + ".")
+    print("")
+    print("The current score is: You: " + str(scoreMe) + " vs CPU: " +
+          str(scoreComp))
 
     continue
 
@@ -61,6 +65,9 @@ while (1 < 2):
     gameRound += 1
     scoreComp += 1
     print("Paper beat rock, I win round " + str(gameRound) + ".")
+    print("")
+    print("The current score is: You: " + str(scoreMe) + " vs CPU: " +
+          str(scoreComp))
 
     continue
 
@@ -69,3 +76,6 @@ while (1 < 2):
     gameRound += 1
     scoreMe += 1
     print("You win round " + str(gameRound) + ".")
+    print("")
+    print("The current score is: You: " + str(scoreMe) + " vs CPU: " +
+          str(scoreComp))
