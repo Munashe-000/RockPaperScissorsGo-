@@ -12,6 +12,7 @@ scoreComp = 0
 
 gameRound = 0
 
+#Boolean flag variable to check condition of if game score has been reached.
 x = 1
 
 while (x < 2):
