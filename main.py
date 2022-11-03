@@ -12,7 +12,21 @@ scoreComp = 0
 
 gameRound = 0
 
-while (1 < 2):
+x = 1
+
+while (x < 2):
+
+  if (scoreMe == 3 or scoreComp == 3):
+
+    x = 2
+
+    if (x == 2):
+      if (scoreMe > scoreComp):
+        print("You win: " + str(scoreMe) + " - " + str(scoreComp) + "Me")
+      else:
+        print("I win: " + str(scoreComp) + " - " + str(scoreMe) + " You")
+
+    break
 
   print("\n")
 
